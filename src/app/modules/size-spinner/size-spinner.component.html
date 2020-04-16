@@ -1,0 +1,28 @@
+
+
+<mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile >        
+        <button mat-raised-button color="primary" (click)="loadData()">Small Spinner</button>
+    </mat-grid-tile>
+
+    <mat-grid-tile>    
+        <button mat-raised-button color="primary" (click)="loadData()">Medium Spinner</button>
+    </mat-grid-tile>
+
+    <mat-grid-tile>    
+        <button mat-raised-button color="primary" (click)="loadData()">Large Spinner</button>
+     </mat-grid-tile>
+
+    <mat-grid-tile>
+        <mat-spinner *ngIf="showSpinner"></mat-spinner>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+        <mat-spinner *ngIf="showSpinner"></mat-spinner>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+        <mat-spinner *ngIf="showSpinner"></mat-spinner>
+    </mat-grid-tile>
+
+    </mat-grid-list>
