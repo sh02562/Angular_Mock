@@ -10,9 +10,9 @@ export class SizeSpinnerComponent implements OnInit {
 
   constructor() { }
 
-  public loadData(){
+  public loadData() {
     this.showSpinner = true;
-    setTimeout(() => { this.showSpinner =false;}, 5000);
+    setTimeout(() => { this.showSpinner = false; }, 5000);
   }
 
   ngOnInit() {

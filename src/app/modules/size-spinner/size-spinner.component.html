@@ -1,28 +1,41 @@
-
-
 <mat-grid-list cols="3" rowHeight="2:1">
-    <mat-grid-tile >        
+    <mat-grid-tile>
         <button mat-raised-button color="primary" (click)="loadData()">Small Spinner</button>
     </mat-grid-tile>
 
-    <mat-grid-tile>    
+    <mat-grid-tile>
         <button mat-raised-button color="primary" (click)="loadData()">Medium Spinner</button>
     </mat-grid-tile>
 
-    <mat-grid-tile>    
+    <mat-grid-tile>
         <button mat-raised-button color="primary" (click)="loadData()">Large Spinner</button>
-     </mat-grid-tile>
-
-    <mat-grid-tile>
-        <mat-spinner *ngIf="showSpinner"></mat-spinner>
     </mat-grid-tile>
 
     <mat-grid-tile>
-        <mat-spinner *ngIf="showSpinner"></mat-spinner>
+        <mat-spinner diameter=20 *ngIf="showSpinner"></mat-spinner>
     </mat-grid-tile>
 
     <mat-grid-tile>
-        <mat-spinner *ngIf="showSpinner"></mat-spinner>
+        <mat-spinner diameter=50 *ngIf="showSpinner"></mat-spinner>
     </mat-grid-tile>
 
-    </mat-grid-list>
+    <mat-grid-tile>
+        <mat-spinner diameter=90 *ngIf="showSpinner"></mat-spinner>
+    </mat-grid-tile>
+
+</mat-grid-list>
+
+<mat-grid-list cols="1" rowHeight="30%">
+
+    <mat-grid-tile>
+        <button mat-raised-button color="primary" (click)="loadData()">Directive Spinner</button>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+
+        <mat-spinner appSpinner *ngIf="showSpinner"></mat-spinner>
+
+    </mat-grid-tile>
+    <!-- style="width:5px;height:5px;"  -->
+
+</mat-grid-list>
